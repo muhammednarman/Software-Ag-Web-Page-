@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+}
+
+nav ul {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav img {
+  width: 120px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  text-transform: capitalize;
+  transition: 0.3s ease-in;
+}
+
+nav ul li a:hover {
+  transform: scale(1.2);
+  color: #1273eb;
+  font-size: 22px;
+}
+
+.kart {
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.kart:hover {
+  transform: translateY(10px);
+  color: #1273eb;
+}
+
+section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section .aciklama {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+section .aciklama h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+
+section .aciklama p {
+  font-size: 22px;
+  color: black;
+  line-height: 35px;
+}
+
+section .aciklama a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid gainsboro;
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  background-color: #1273eb;
+  text-transform: capitalize;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+section .aciklama a:hover {
+  transform: translateY(-4px);
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+}
+
+section .image {
+  position: relative;
+}
+
+section .image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -120px;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  filter: blur(8px);
+}
+
+.icon {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon img {
+  width: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #17d460;
+  border-radius: 50%;
+}
+.icon img:hover {
+  transform: translateY(-20px);
+}
+
+.logo {
+  height: 15vh;
+  width: 13%;
+}
